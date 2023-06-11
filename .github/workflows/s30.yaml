@@ -32,7 +32,7 @@ jobs:
       run: |
         sudo -i
         cd $GITHUB_WORKSPACE
-        git clone -b lineage-20 https://github.com/a592345029/s30.git
+        git clone -b main https://github.com/a592345029/s30.git
         cd s30
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
         echo "CONFIG_AUFS_FS=y" >>arch/arm64/configs/defconfig
