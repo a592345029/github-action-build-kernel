@@ -279,8 +279,8 @@ jobs:
        sudo -i
        export ARCH=arm64
        export SUBARCH=arm64
-       make O=out CC=clang-14 defconfig ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi-
-       make O=out CC=clang-14 -j$(nproc --all) ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi-
+       make O=out CC=clang-15 defconfig ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi-
+       make O=out CC=clang-15 -j$(nproc --all) ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi-
     - name: check
       run: |
        cd /home/runner/work/github-action-build-kernel/github-action-build-kernel/s30/out/arch/arm64/boot/
